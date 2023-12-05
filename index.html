@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const payload = {
+            app_id: 'aliorders',
+        };
+        (function (w, d, s, l, i) {
+            w[l] = i;
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s);
+            j.defer = true;
+            j.src = 'https://cdn-stag.socialhead.io/operation/notify.js';
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'oprNotify', payload);
+    </script>
+</head>
+<body>   
+</body>
+</html>
